@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'EffraMedium';
+  src: url(effra_std_medium.ttf);
+}
+@font-face {
+  font-family: 'EffraLight';
+  src: url(effra_std_light.ttf);
+}
+
+body{
+	margin:20px 0 0 0;
+	background: #A5C986;
+	color:#fff;
+	font-family: 'EffraLight';
+}
+
+.clear {
+	clear: both;
+}
+
+p{
+	margin-top:0;
+}
+
+h1, h2, h3{
+	font-family: 'EffraMedium';
+	margin-top:0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.text_align_center{
+	text-align: center;
+}
+
+#logo{
+	display: inline-block;
+	height: 100%;
+	width: 10%;
+	background: #000fff;
+	vertical-align: middle;
+}
+
+#navigation{
+	display: inline-block;
+	width:80%;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+#navigation h2 {
+	display: inline-block;
+	margin:0 10px;
+}
+
+#header{
+	top:20px;
+	width:85%;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index: 1;
+	height: 100px;
+}
+
+#left_content{
+	position: absolute;
+	height: 100%;
+	width: 70%;
+	left:0;
+	z-index: 0;
+}
+
+#right_content{
+	color:#A5C986;
+	top:0;
+	position: fixed;
+	background: #fff;
+	height: 100%;
+	width: 30%;
+	right:0;
+	z-index: 0;
+}
+
+#container{
+	top:40px;
+	padding:5px 10px;
+	width:80%;
+	margin:0 auto;
+	left:0;
+	right:0;
+	position: absolute;
+}
+
+#main_container{
+	top:40px;
+	padding:5px 10px;
+	width:80%;
+	margin:0 auto;
+	left:0;
+	right:0;
+	position: absolute;
+}
+
+#blog_container{
+	top:40px;
+	padding:5px 10px;
+	width:80%;
+	margin:0 auto;
+	right:0;
+	left:200%;
+	position: absolute;
+}
+
+.text{
+	font-size: 14pt;
+	background:#A5C986;	
+}
+
+button{
+	border:none;
+  -webkit-appearance:none;
+  padding:8px 10px;
+}
+.button_container{
+	width:80%;
+	margin:0 auto;
+}
+.donate button{
+	background:#f4f4f4;
+	float:right;
+	vertical-align: middle;
+	border-radius: 2px;
+	font-size: 10pt;
+	width:80px;
+}
+.donate button:hover{
+	background:#A5C986;	
+}
+.donate p{
+	float:left;
+	vertical-align: middle;
+}
