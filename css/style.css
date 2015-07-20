@@ -29,6 +29,21 @@ h1, h2, h3{
 
 a{
 	text-decoration: none;
+	color:#fff;
+}
+
+.display_inline_block{
+	display: inline-block;
+}
+
+.no_margin{
+	margin:0;
+}
+.margin_top_5{
+	margin-top:2px;
+}
+.margin_right_5{
+	margin-right: 5px;
 }
 
 .text_align_center{
@@ -83,6 +98,10 @@ a{
 	z-index: 0;
 }
 
+#right_content a{
+	color: #A5C986;	
+}
+
 #container{
 	top:40px;
 	padding:5px 10px;
@@ -128,6 +147,7 @@ button{
 	margin:0 auto;
 }
 .donate button{
+	font-family: 'EffraMedium';
 	background:#f4f4f4;
 	float:right;
 	vertical-align: middle;
@@ -137,8 +157,36 @@ button{
 }
 .donate button:hover{
 	background:#A5C986;	
+	color:#fff;
 }
-.donate p{
+.button_container p{
 	float:left;
 	vertical-align: middle;
+}
+
+.donate_button{
+	margin:20px auto 0 auto;
+	position: absolute;
+	left:0;
+	right: 0;
+	padding: 4px 6px 0px 4px;
+	height:50px;
+	width:60% !important;
+	background:#A5C986 !important;	
+}
+.donate_button:hover{
+	background:#f4f4f4 !important;	
+}
+.donate_button:hover h2{
+	color:#333 !important;	
+}
+.dontation_options{
+	margin:40px 0 0 0;
+}
+
+.donate_button h2{
+	text-align: center;
+	font-size: 25px;
+	color:#fff;
+	margin:0;
 }
