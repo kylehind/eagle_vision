@@ -12,6 +12,7 @@ body{
 	background: #A5C986;
 	color:#fff;
 	font-family: 'EffraLight';
+	overflow-x:hidden;
 }
 
 .clear {
@@ -48,6 +49,11 @@ a{
 
 .text_align_center{
 	text-align: center;
+}
+
+.center{
+	width:inherit;
+	margin:0 auto;
 }
 
 #logo{
@@ -131,6 +137,39 @@ a{
 	left:200%;
 	position: absolute;
 }
+.image_container{
+	margin:0 auto 15px auto;
+	width: 40%;
+	background: #fff;
+	padding:10px;
+}
+.image_container img{
+	width:100%;
+}
+
+.image_container_large{
+	margin:0 auto 15px auto;
+	width: 80%;
+	background: #fff;
+	padding:10px;
+}
+.image_container_large img{
+	width:49%;
+}
+
+.pull_left{
+	float: left;
+}
+.pull_right{
+	float: right;
+}
+
+.caption{
+	color: #333;
+	text-align: center;
+	margin:0;
+	font-weight: bold;
+}
 
 .text{
 	font-size: 14pt;
@@ -159,6 +198,11 @@ button{
 	background:#A5C986;	
 	color:#fff;
 }
+.donate button.selected{
+	background:#A5C986;	
+	color:#fff;
+}
+
 .button_container p{
 	float:left;
 	vertical-align: middle;

@@ -6,6 +6,7 @@
 	  <link rel="stylesheet" href="css/style.css">
 	 	<script src="js/jquery-2.1.4.min.js"></script>
 	 	<script src="js/navigator.js"></script>
+	 	<script src="js/donate.js"></script>
 	</head>
 
 	<body>
@@ -21,12 +22,26 @@
 		<div id="left_content">
 			<!-- ABOUT -->
 			<div id="main_container" class="text">
-				<p>Eagle Vision High School represents the latest step in rising education standards in Jasho Farm; with 4 private and public primary schools opening in the last 9 years but until now, no high school. </p>
-				<p>Now the area has a new beacon for a hopeful future – a quality secondary school that will continue the education of Jasho’s young people and help lift the community along with them. </p>
-				<p>The school is founded in an area which has been adversely affected by the post-election violence of 2008 – years of poverty followed and aspirations have not tended to reach past survival or breaking out.</p>
-				<p>There is currently one year group - Form 1. This pioneering class is made up of 12 extremely dedicated students who are pictured below.</p>
-				<p>The new school works on an innovative revenue model that blends low school fees with outside funding. It is a compassionate business model; one that bridges the gap between entrepreneurship and ethics.</p>
-				<p>If Eagle Vision High School succeeds, it will change the lives of so many people. Not just its current students but generations of people to come in the area of Jasho. This is Social Enterprise at its finest.</p>
+				<p>Eagle Vision High School represents the latest step in rising education standards in Jasho Farm; with 4 private and public primary schools opening in the last 9 years but until now, no high school. </br>
+				Now the area has a new beacon for a hopeful future – a quality secondary school that will continue the education of Jasho’s young people and help lift the community along with them. </p>
+
+				<div class="image_container_large center">
+					<img src="img/home/home_1.png" class="pull_left">
+					<img src="img/home/home_2.png" class="pull_right">
+					<div class="clear"></div>				
+				</div>
+
+				<p>The school is founded in an area which has been adversely affected by the post-election violence of 2008 – years of poverty followed and aspirations have not tended to reach past survival or breaking out.</br>
+				There is currently one year group - Form 1. This pioneering class is made up of 12 extremely dedicated students who are pictured below.</p>
+
+				<div class="image_container_large center">
+					<img src="img/home/home_3.png" class="pull_left">
+					<img src="img/home/home_4.png" class="pull_right">
+					<div class="clear"></div>				
+				</div>
+
+				<p>The new school works on an innovative revenue model that blends low school fees with outside funding. It is a compassionate business model; one that bridges the gap between entrepreneurship and ethics.</br>
+				If Eagle Vision High School succeeds, it will change the lives of so many people. Not just its current students but generations of people to come in the area of Jasho. This is Social Enterprise at its finest.</p>
 			</div>
 			<!-- BLOG -->
 			<!-- this_business_of_education -->
@@ -40,6 +55,11 @@
 				<p>According to a report published by Unesco in October, 71 million teens at lower secondary school age were out of school in 2010, with three out of four living in south and west Asia and sub-Saharan Africa. The latter African region has made tremendous strides in increasing numbers of students in school in recent years, yet still has the world’s lowest total secondary enrolment, at 40% in 2010.</p>
 
 				<p>The Kenyan Government on its own cannot meet or fund the demand for secondary education; this is where private schools have stepped in to plug the widening gap. These schools can compete for pupils, sack bad teachers, and offer tuition at relatively modest rates in comparison to public schools. Research by the Brookings Institution has found that the fees for two-thirds of children in Kenyan private schools are lower than in the supposedly ‘free’ state system. But these fees, whether official or unofficial, public or private, still disproportionally affect poor and rural families.</p>
+
+				<div class="image_container"> 
+					<img src="img/posts/this_business_of_education.png">
+					<p class="caption">Metrine Akainyi</p>
+				</div>
 
 				<p>One entrepreneur who is seeking to bridge the gap between education standards for low-income families is Metrine Akainyi – a teacher and mother of three from Pioneer in Eldoret. She has opened a High School in the vicinity of Jasho Farm – a rural area 5km South of Eldoret Town which was adversely affected by the post-election violence of 2007/2008, a consequence being the severe depletion of the income of its inhabitants.</p>
 
@@ -60,26 +80,26 @@
 		<div id="right_content">
 			<div id="container" class="donate">		
 				<h2 class="text_align_center"><a href="#">Get Involved</a></h2>
-				<div>
+				<div class="text_align_center">
 					<p class="no_margin margin_right_5 display_inline_block"><em>Learn more about how to help</em></p>
 					<h3 class="no_margin display_inline_block">Here</h3>
 				</div>
-				<div>
-					<p class="margin_top_5 margin_right_5 display_inline_block"><em>.. or swing in to action and</em></p>
-					<h3 class="no_margin display_inline_block">Quick Donate</h3>
+				<div class="text_align_center">
+					<p class="no_margin"><em>..or swing in to action and..</em></p>
+					<h3 class="no_margin">Quick Donate Below</h3>
 				</div>
 				<div class="dontation_options">
 					<p class="text_align_center"><em> Support a Child by donating </em></p>
 					<div class="button_container">
-						<p>1 Years Tuition</p> <button type="button">£100</button>
+						<p>1 Years Tuition</p> <button value="100.00" class="donate_select" type="button">£100</button>
 						<div class="clear"></div>
 					</div>
 					<div class="button_container">
-						<p>1 Terms Tuition</p> <button type="button">£30</button>
+						<p>1 Terms Tuition</p> <button value="30.00" class="donate_select" type="button">£30</button>
 						<div class="clear"></div>
 					</div>
 					<div class="button_container">
-						<p>1 Years Textbooks</p> <button type="button">£19</button>
+						<p>1 Years Textbooks</p> <button value="19.00" class="donate_select" type="button">£19</button>
 						<div class="clear"></div>
 					</div>
 				</div>
@@ -88,7 +108,7 @@
 					<input type="hidden" name="business" value="me@mybiz.co.uk">
 					<input type="hidden" name="item_name" value="Team In Training">
 					<input type="hidden" name="currency_code" value="GBP">
-					<input type="hidden" name="amount" value="25.00">
+					<input type="hidden" id="donation_amount" name="amount" value="25.00">
 					<button class="donate_button" type="submit" border="0" name="submit"><h2>Donate</h2></button>
 					<img class="paypal" src="img/paypal.png">
 				</form>
