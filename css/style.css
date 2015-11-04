@@ -33,6 +33,11 @@ a{
 	color:#fff;
 }
 
+.underlined_white {
+	padding-bottom: 2px;
+	border-bottom: 4px solid #fff;
+}
+
 .display_inline_block{
 	display: inline-block;
 }
@@ -133,8 +138,12 @@ a{
 	width:80%;
 	margin:0 auto;
 	right:0;
-	left:200%;
+	left:-200%;
 	position: absolute;
+}
+
+.green_get_involved_link{
+	cursor: pointer;
 }
 
 #get_involved_container{
@@ -143,7 +152,7 @@ a{
 	width:80%;
 	margin:0 auto;
 	right:0;
-	left:200%;
+	left:-200%;
 	position: absolute;
 }
 
