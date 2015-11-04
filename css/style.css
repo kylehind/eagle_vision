@@ -130,6 +130,7 @@ a{
 	left:0;
 	right:0;
 	position: absolute;
+	padding-bottom: 100px;
 }
 
 #blog_container{
@@ -140,6 +141,7 @@ a{
 	right:0;
 	left:-200%;
 	position: absolute;
+	padding-bottom: 100px;
 }
 
 .green_get_involved_link{
@@ -154,6 +156,7 @@ a{
 	right:0;
 	left:-200%;
 	position: absolute;
+	padding-bottom: 100px;
 }
 
 .image_container{
