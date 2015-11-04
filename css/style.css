@@ -136,6 +136,17 @@ a{
 	left:200%;
 	position: absolute;
 }
+
+#get_involved_container{
+	top:40px;
+	padding:5px 10px;
+	width:80%;
+	margin:0 auto;
+	right:0;
+	left:200%;
+	position: absolute;
+}
+
 .image_container{
 	margin:0 auto 15px auto;
 	width: 40%;
