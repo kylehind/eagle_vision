@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(".donate_19").addClass("selected");
 	$(".donate_select").click(function(){
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
