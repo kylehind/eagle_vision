@@ -60,8 +60,6 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
         <h1><?php  bloginfo( 'name' ); ?></h1>
       </a>
     </div>
-    <div id="navigation-menu-icon"><img src='<?php echo get_template_directory_uri() ?>/img/menu.png'></div>
-    <div class="mobile_clear"></div>
     <nav id="navigation" class="site-navigation main-navigation">
       <ul>
         <?php wp_nav_menu( array( 'items_wrap' => '<span id="%1$s" class="%2$s">%3$s</span>', 'container' => '', 'theme_location' => 'primary' ) ); ?>
