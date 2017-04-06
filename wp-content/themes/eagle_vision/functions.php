@@ -81,10 +81,7 @@ add_action( 'wp_enqueue_scripts', 'eagle_vision_scripts' );
 
 add_theme_support( 'post-thumbnails' );
 
-$defaults = array(
-    'default-color' => '87c8f0',
-);
-add_theme_support( 'custom-background', $defaults );
+add_theme_support( 'custom-background' );
 
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
