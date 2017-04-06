@@ -365,8 +365,6 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li a:hover{
-  border-bottom: 2px solid #000;
-  height: 22px;
 }
 .main-navigation ul ul :hover > a {
 }
