@@ -15,23 +15,9 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
   <div id="content" class="site-content" role="main">
-
     <?php while ( have_posts() ) : the_post(); ?>
-
       <?php get_template_part( 'content', 'page' ); ?>
-
-
     <?php endwhile; // end of the loop. ?>
-
-    <div class="clear"></div>
-    <!-- show all posts below -->
-    <?php query_posts('posts_per_page=1000'); ?>
-    <div class="grid">
-      <?php while ( have_posts() ) : the_post(); ?>
-         <?php get_template_part( 'content', get_post_format() ); ?>
-      <?php endwhile; ?>
-    </div>
-    <div class="clear"></div>
   </div><!-- #content .site-content -->
 </div><!-- #primary .content-area -->
 

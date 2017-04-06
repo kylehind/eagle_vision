@@ -78,19 +78,5 @@ function eagle_vision_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'eagle_vision_scripts' );
 
-/**
- * Register widgetized area and update sidebar with default widgets
- *
- * @since eagle_vision 1.0
- */
-function eagle_vision_widgets_init() {
-    register_sidebar( array(
-        'name' => __( 'Contact', 'hamer' ),
-        'id' => 'contact',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>'
-    ) );
-}
-add_action( 'widgets_init', 'eagle_vision_widgets_init' );
 
 add_theme_support( 'post-thumbnails' );

@@ -73,5 +73,4 @@ echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 
   <div id="main" class="site-main">
     <div id="primary" class="content-area">
-      <?php get_template_part('contact'); ?>
       <div class="clear"></div>

@@ -16,14 +16,9 @@
 
 <div id="content" class="site-content" role="main">
   <?php if ( have_posts() ) : ?>
-    <?php /* Start the Loop */ ?>
-    <div class="grid">
-      <?php query_posts('category_name=portfolio'); ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'content', get_post_format() ); ?>
-      <?php endwhile; ?>
-    </div>
-    <div class="clear"></div>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part( 'content', get_post_format() ); ?>
+    <?php endwhile; ?>
   <?php else : ?>
     <?php get_template_part( 'no-results', 'index' ); ?>
   <?php endif; ?>
