@@ -9,7 +9,6 @@
   <div class="entry-content">
     <h1 class="entry-title">
       <?php the_title(); ?>
-      <span class="info-link">info</span>
     </h1>
     <?php the_content(); ?>
     <div class="clear"></div>
