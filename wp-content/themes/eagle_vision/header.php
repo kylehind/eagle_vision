@@ -55,18 +55,20 @@
 <div id="page" class="hfeed site">
 
   <header id="masthead" class="site-header" role="banner">
-    <hgroup></hgroup>
-    <div class="site-logo">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-        <h1><?php  bloginfo( 'name' ); ?></h1>
-      </a>
+    <div id="masthead-content">
+      <hgroup></hgroup>
+      <div class="site-logo">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+          <h1><?php  bloginfo( 'name' ); ?></h1>
+        </a>
+      </div>
+      <nav id="navigation" class="site-navigation main-navigation">
+        <ul>
+          <?php wp_nav_menu( array( 'items_wrap' => '<span id="%1$s" class="%2$s">%3$s</span>', 'container' => '', 'theme_location' => 'primary' ) ); ?>
+        </ul>
+      </nav><!-- .site-navigation .main-navigation -->
+      <div class="clear"></div>
     </div>
-    <nav id="navigation" class="site-navigation main-navigation">
-      <ul>
-        <?php wp_nav_menu( array( 'items_wrap' => '<span id="%1$s" class="%2$s">%3$s</span>', 'container' => '', 'theme_location' => 'primary' ) ); ?>
-      </ul>
-    </nav><!-- .site-navigation .main-navigation -->
-    <div class="clear"></div>
   </header><!-- #masthead .site-header -->
   <div class="clear"></div>
 

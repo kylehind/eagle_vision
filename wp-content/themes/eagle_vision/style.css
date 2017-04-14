@@ -16,6 +16,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =Fonts
 -------------------------------------------------------------- */
 
+@font-face {
+  font-family: EffraMedium;
+  src: url(fonts/effra_std_medium.ttf);
+}
+@font-face {
+  font-family: EffraLight;
+  src: url(fonts/effra_std_light.ttf);
+}
+
 /* =Reset
 -------------------------------------------------------------- */
 
@@ -94,8 +103,8 @@ button,
 input,
 select,
 textarea {
-  color: #000;
-  font-family: LeituraNewsRoman;
+  color: #fff;
+  font-family: EffraLight;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -106,16 +115,22 @@ h1,h2,h3,h4,h5,h6 {
   clear: both;
 }
 hr {
-  background-color: #333;
-  border: 0;
-  height: 1px;
-  margin: 11vh 2.665% 11vh 2.665%;
-  width: 94.6%;
+  border: none;
+  width: 100%;
+  height: 2px;
+  clear: both;
+  background-color: #fff;
+  margin: 10vh 0;
+}
+hr:last-of-type {
+  display: none;
 }
 
 /* Text elements */
 p {
   margin-bottom: 1.5em;
+  clear: both;
+  font-size: 14pt;
 }
 ul, ol {
   margin: 0 0 1.5em 3em;
@@ -150,7 +165,7 @@ address {
 }
 pre {
   background: #eee;
-  font-family: LeituraNewsRoman;
+  font-family: EffraLight;
   font-size: 15px;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -299,49 +314,74 @@ textarea {
 }
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: MaisonneueBold;
+  font-family: EffraMedium;
+  font-weight: bold;
 }
 h1 {
-  font-size: 12pt;
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
 }
 
 /* Links */
 a {
-  color: #000;
+  color: #fff;
   font-size: none;
   outline: 0;
 }
 a:visited {
-  color: #000;
+  color: #fff;
   outline: 0;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #000;
+  color: #fff;
   outline: 0;
 }
 
-/* Alignment */
+/* Image Alignment */
 .alignleft {
+  padding: 1.5% 0.75% 1.5% 1.5%;
+  background: #fff;
   display: block;
   float: left;
-  width: 46.5% !important;
+  width: 41.75%;
+  margin: 0 0 1.5em 6%;
 }
 .alignright {
+  padding: 1.5% 1.5% 1.5% 0.75%;;
+  background: #fff;
   display: block;
   float: right;
-  width: 46.5% !important;
+  width: 41.75%;
+  margin: 0 6% 1.5em 0;
 }
 .alignnone {
+  background: #fff;
+  padding: 1.5% 1.5% 1.5% 1.5%;;
   clear: both;
   display: block;
   margin: 0 auto;
+  width: 85%;
+  margin-bottom: 1.5em;
 }
 .aligncenter {
+  background: #fff;
+  padding: 1.5% 1.5% 1.5% 1.5%;;
   clear: both;
   display: block;
   margin: 0 auto;
+  width: 85%;
+  margin-bottom: 1.5em;
+}
+.wp-caption img{
+  margin-bottom: 2.5% !important;
+}
+.wp-caption p{
+  color: #000;
+  margin: 0 !important;
 }
 
 /* Text meant only for screen readers */
@@ -382,6 +422,28 @@ a:active {
 .main-small-navigation .menu {
   display: none;
 }
+/* =Forms
+----------------------------------------------- */
+button {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  padding: 8px 10px;
+}
+button:hover {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+}
+button:focus {
+  outline:0;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+}
 
 /* =Content
 ----------------------------------------------- */
@@ -415,8 +477,6 @@ img[class*="wp-image-"] {
 .site-header img,
 .entry-content img,
 img.size-full {
-  max-width: 100%;
-  width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -426,7 +486,6 @@ img.size-full {
   padding: 0;
 }
 .wp-caption {
-  border: 1px solid #ccc;
   max-width: 100%;
 }
 .wp-caption.aligncenter,
@@ -436,8 +495,7 @@ img.size-full {
 }
 .wp-caption img {
   display: block;
-  margin: 1.2% auto 0;
-  max-width: 98%;
+  width: 100%;
 }
 .wp-caption-text {
   text-align: center;
@@ -472,6 +530,161 @@ object {
 
 /* =Header and Navigation
 ----------------------------------------------- */
+#masthead {
+  padding-top: 5vh;
+  width: 70vw;
+}
+#masthead-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.site-logo {
+  width: 30%;
+  display: inline-block;
+}
+.site-logo h1{
+  margin: 0;
+  line-height: 1.1em;
+}
+#navigation {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 69%;
+}
+#navigation ul{
+  list-style: none;
+  margin: 0;
+}
+#navigation li{
+  display: inline;
+  margin-right: 5%;
+}
+#navigation a{
+  display: inline;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: EffraMedium;
+}
+/* =Content
+----------------------------------------------- */
+#primary {
+  margin-top: 4vh;
+  display: inline-block;
+  width: 70vw;
+}
+#content {
+  width: 80%;
+  margin: 0 auto;
+}
+#content h2{
+  margin-bottom: 1em;
+}
+/* =Side Bar
+----------------------------------------------- */
+#secondary {
+  padding-top: 5vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 30vw;
+  color: #87c8f0;
+  background: #fff;
+}
+#secondary h2 {
+  text-align: center;
+}
+#secondary h3 {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+#secondary a {
+  font-size: 1.17em;
+  font-family: EffraMedium;
+  font-weight: bold;
+  margin-left: 2px
+}
+#secondary p {
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+#secondary a{
+  color: #87c8f0;
+}
+#secondary a:visited,
+#secondary a:hover,
+#secondary a:focus,
+#secondary a:active {
+  color: #87c8f0;
+}
+#sidebar-content {
+  padding: 5px 10px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* =Donate
+----------------------------------------------- */
+
+#donate_buttons p{
+  text-align: left;
+  float: left;
+  display: inline;
+}
+#donate_buttons button {
+  font-family: 'EffraMedium';
+  background: #f4f4f4;
+  float: right;
+  vertical-align: middle;
+  border-radius: 2px;
+  font-size: 10pt;
+  width: 80px;
+}
+#donate_buttons button:hover {
+  background: #87c8f0;
+  color: #fff;
+}
+#donate_buttons button.selected{
+  background: #87c8f0;
+  color: #fff;
+}
+#donate_buttons h4{
+  text-align: center;
+  font-weight: normal;
+  font-family: EffraLight;
+  margin-bottom: 1vh;
+}
+#donate_buttons form button {
+  float: none;
+  height: 50px;
+  font-size: 18px;
+  background: #87c8f0;
+  color: #fff;
+  width: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+}
+#donate_buttons form button:hover {
+  background: #f4f4f4;
+  color: #000;
+}
+/* =Formatting
+----------------------------------------------- */
+.hbreak {
+  width: 100%;
+  height: 2vh;
+  clear: both;
+}
+.smallhbreak {
+  width: 100%;
+  height: 5px;
+  clear: both;
+}
 
 /* =Comments
 ----------------------------------------------- */
@@ -489,4 +702,11 @@ object {
 /* Search widget */
 #searchsubmit {
   display: none;
+}
+
+/* =Footer
+----------------------------------------------- */
+footer {
+  height: 100px;
+  display: block;
 }

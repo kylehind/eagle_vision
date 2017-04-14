@@ -67,7 +67,7 @@ add_action( 'after_setup_theme', 'eagle_vision_setup' );
  */
 function eagle_vision_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
-
+    wp_enqueue_script( 'donate', get_template_directory_uri() . '/js/donate.js', array( 'jquery' ), '20160620' );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
@@ -82,6 +82,8 @@ add_action( 'wp_enqueue_scripts', 'eagle_vision_scripts' );
 add_theme_support( 'post-thumbnails' );
 
 add_theme_support( 'custom-background' );
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
 
 if ( function_exists('register_sidebar') )
   register_sidebar(array(

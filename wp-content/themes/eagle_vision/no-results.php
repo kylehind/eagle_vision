@@ -13,5 +13,6 @@ get_header(); ?>
     <h2>Nothing Found.</h2>
   </div>
 </div>
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
