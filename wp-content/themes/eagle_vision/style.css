@@ -659,12 +659,13 @@ object {
 }
 #donate_buttons form button {
   float: none;
+  display: block;
   height: 50px;
   font-size: 18px;
   background: #87c8f0;
   color: #fff;
-  width: 60%;
-  position: absolute;
+  width: 200px;
+  position: relative;
   left: 0;
   right: 0;
   margin: 20px auto;
